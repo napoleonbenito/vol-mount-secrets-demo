@@ -38,6 +38,7 @@ This project demonstrates the use of volume-mounted secrets in Kubernetes with a
 
 - The application will be accessible at `http://localhost:8080`, displaying the secret read from the mounted volume.
 
+![Alt text](_img/2023-12-12_14-37-55.png)
 
 ## Key Concepts
 
