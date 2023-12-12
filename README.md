@@ -1,4 +1,4 @@
-# Populating Volume-Mounted Secrets in Kubernetes from AWS Secrets Manager
+# Using Volume-Mounted Secrets in Kubernetes
 
 ## Overview
 
