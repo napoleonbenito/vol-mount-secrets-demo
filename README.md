@@ -19,7 +19,8 @@ This project demonstrates the use of volume-mounted secrets in Kubernetes with a
 1. **Create a Kubernetes Secret**:
    - Use **kubectl** to create a secret with the required sensitive data.
      - The idea is that this secret will be fetched or published from an external source like AWS Secrets Manager or paramstore, etc. behind the scenes.  No one needs to know what this secret actually is.
-   - Example command: `kubectl create secret generic my-secret --from-literal=mykey="YourSecretValue"`
+   - Example command: `kubectl create secret generic my-secret --from-literal=mykey="Hello, Secret World! "`
+`
 
 2. **Create and Activate Virtual Environment**:
    - `python -m venv venv`
