@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-secret-app
+  name: python-secret-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: go-secret-app
+      app: python-secret-app
   template:
     metadata:
       labels:
-        app: go-secret-app
+        app: python-secret-app
     spec:
       containers:
-      - name: go-secret-app
-        image: go-secret-app:latest
+      - name: python-secret-app
+        image: python-secret-app:latest
         ports:
         - containerPort: 8080
         volumeMounts:
@@ -30,10 +30,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: go-secret-app-service
+  name: python-secret-app-service
 spec:
   type: NodePort
   ports:
   - port: 8080
   selector:
-    app: go-secret-app
+    app: python-secret-app
